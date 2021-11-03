@@ -7,18 +7,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Food Bar</title>
+	<title>Matcha - {% block title %}{% endblock title %}</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-	<!-- <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}"> -->
+	<link rel="stylesheet" href="{% static 'css/linericon.css' %}">
 	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-	<!-- <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}"> -->
-	<!-- <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css' %}"> -->
-	<!-- <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}"> -->
-	<!-- <link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css' %}"> -->
-	<!-- <link rel="stylesheet" href="{% static 'vendors/popup/magnific-popup.css' %}"> -->
-	<!-- <link rel="stylesheet" href="{% static 'vendors/swiper/css/swiper.min.css' %}"> -->
-	<!-- <link rel="stylesheet" href="{% static 'vendors/scroll/jquery.mCustomScrollbar.css' %}"> -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
+	<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.css' %}">
 	<!-- main css -->
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
@@ -104,8 +105,9 @@
 					<a class="navbar-brand logo_h" href="index.html">
 						<img src="img/logo-2.png" alt="">
 					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -126,7 +128,8 @@
 								<a class="nav-link" href="book-table.html">Book a table</a>
 							</li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item">
 										<a class="nav-link" href="gallery.html">Gallery</a>
@@ -137,7 +140,8 @@
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+									aria-haspopup="true" aria-expanded="false">Blog</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item">
 										<a class="nav-link" href="blog.html">Blog</a>
@@ -177,7 +181,8 @@
 				<div class="col-lg-6 p-0">
 					<div class="banner_left d-flex justify-content-center flex-column">
 						<h1>delicious cupcakes</h1>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially
+						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
+							standards especially
 							in the workplace. That’s why it’s crucial that, as women.
 						</p>
 						<a class="main_btn" href="#">check our menu</a>
@@ -207,6 +212,7 @@
 
 	<!--================ Top Dish Area =================-->
 	<section class="top_dish_area">
+		{% block content %}{% endblock %}
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -474,8 +480,10 @@
 							<div class="testi_text">
 								<h4>Filipino Gomez</h4>
 								<h5>Web Developer, Google</h5>
-								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation
 									ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
 							</div>
 						</div>
@@ -490,8 +498,10 @@
 							<div class="testi_text">
 								<h4>Filipino Gomez</h4>
 								<h5>Web Developer, Google</h5>
-								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation
 									ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
 							</div>
 						</div>
@@ -506,8 +516,10 @@
 							<div class="testi_text">
 								<h4>Filipino Gomez</h4>
 								<h5>Web Developer, Google</h5>
-								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+									veniam, quis nostrud exercitation
 									ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
 							</div>
 						</div>
@@ -541,16 +553,20 @@
 					<div class="table_form">
 						<form class="book_table_form row" action="#">
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+								<input type="text" class="form-control" id="name" name="name"
+									placeholder="Enter your name">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+								<input type="email" class="form-control" id="email" name="email"
+									placeholder="Enter email address">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Phone Number">
+								<input type="text" class="form-control" id="subject" name="subject"
+									placeholder="Phone Number">
 							</div>
 							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Select date & time">
+								<input type="text" class="form-control" id="subject" name="subject"
+									placeholder="Select date & time">
 							</div>
 							<div class="form-group col-md-12">
 								<div class="form-select">
@@ -564,7 +580,8 @@
 								</div>
 							</div>
 							<div class="form-group col-md-12">
-								<button type="submit" value="submit" class="btn submit_btn form-control">Make Reservation</button>
+								<button type="submit" value="submit" class="btn submit_btn form-control">Make
+									Reservation</button>
 							</div>
 						</form>
 					</div>
@@ -661,11 +678,13 @@
 						</div>
 						<p>Stay updated with our latest trends</p>
 						<div id="mc_embed_signup">
-							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="subscribe_form relative">
+							<form target="_blank"
+								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get" class="subscribe_form relative">
 								<div class="input-group d-flex flex-row">
-									<input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
-									 required="" type="email">
+									<input name="EMAIL" placeholder="Enter email address"
+										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
+										required="" type="email">
 									<button class="btn sub-btn">
 										<span class="lnr lnr-arrow-right"></span>
 									</button>
@@ -677,9 +696,13 @@
 				</div>
 			</div>
 			<div class="row footer-bottom d-flex justify-content-between align-items-center">
-				<p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<p class="col-lg-8 col-md-8 footer-text m-0">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;<script>
+						document.write(new Date().getFullYear());
+					</script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+						aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</p>
 				<div class="col-lg-4 col-md-4 footer-social">
 					<a href="#">
@@ -711,17 +734,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/stellar.js' %}"></script>
 	<script src="{% static 'js/jquery.lightbox.js' %}"></script>
-	<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+	<!-- <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
 	<script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
-	<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
-	<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'vendors/isotope/isotope-min.js' %}"></script> -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
 	<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-	<script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
-	<script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script>
+	<!-- <script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script> -->
+	<!-- <script src="{% static 'vendors/counter-up/jquery.counterup.js' %}"></script> -->
 	<script src="{% static 'js/mail-script.js' %}"></script>
-	<script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
-	<script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script>
-	<script src="{% static 'vendors/scroll/jquery.mCustomScrollbar.js' %}"></script>
+	<!-- <script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script> -->
+	<script src="{% static 'js/jquery.mCustomScrollbar.js' %}"></script>
 	<script src="{% static 'js/theme.js' %}"></script>
 </body>
 
