@@ -1,6 +1,54 @@
-{% extends 'layouts/about-us.html' %}
+{% extends 'layouts/base.html' %}
 
-<!-- {% block content %}
+{% block content %}
 {% load static %}
-<h2>Main Page</h2>
-{% endblock content %} -->
+<!--================ Banner Area =================-->
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h1>About Us</h1>
+                <div class="page_link">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+        <div class="shape shape6"></div>
+        <div class="shape shape7"></div>
+    </div>
+</section>
+<!--================End Banner Area =================-->
+
+<!--================Story Area =================-->
+<section class="about_story_area section_gap">
+    <div class="container">
+        <div class="row story_inner">
+            <div class="col-lg-6">
+                <div class="story_text">
+                    <h2>About Our Story</h2>
+                    <hr>
+                    <p>Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip consequat.</p>
+                    <a class="main_btn" href="#">View Full Menu</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="story_img">
+                    <img class="img-fluid" src="img/story/story-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Story Area =================-->
+{% endblock content %}

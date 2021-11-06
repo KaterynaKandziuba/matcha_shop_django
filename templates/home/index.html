@@ -1,8 +1,189 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %}Авторизация{% endblock title %}
+{% block title %}Магазин{% endblock title %}
 
 {% block content %}
 {% load static %}
-<h2>Main Page</h2>
-{% endblock content %}
+	<!--================ Start banner section =================-->
+	<section class="home_banner relative">
+		<div class="container-fluid pl-0">
+			<div class="row justify-content-center align-items-center full_height">
+				<div class="col-lg-6 p-0">
+					<div class="banner_left d-flex justify-content-center flex-column">
+						<h1>japanese matcha tea</h1>
+						<p>
+							just one cup to start your own perfect day
+						</p>
+						<a class="main_btn" href="#">check our products</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="banner_right d-flex justify-content-center align-items-center">
+						<div class="round-planet planet">
+							<div class="round-planet planet2">
+								<div class="round-planet planet3">
+									<div class="shape shape1"></div>
+									<div class="shape shape2"></div>
+									<div class="shape shape3"></div>
+									<div class="shape shape4"></div>
+									<div class="shape shape5"></div>
+									<div class="shape shape6"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="face-img img-fluid" src="img/banner/home-banner.png" alt="">
+	</section>
+	<!--================ End banner section =================-->
+
+	<!--================ Top Products Area =================-->
+	<section class="top_dish_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title position-relative">
+						<h1>Our Top Rated Products</h1>
+						<hr>
+						<div class="round-planet planet">
+							<div class="round-planet planet2">
+								<div class="shape shape1"></div>
+								<div class="shape shape2"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="single_dish col-lg-4 col-md-6 text-center">
+					<div class="thumb">
+						<img class="img-fluid" src="img/dish/d1.jpg" alt="">
+					</div>
+					<h4>Green Matcha</h4>
+					<p>
+						Classic taste
+					</p>
+					<h5 class="price">$5.59</h5>
+				</div>
+
+				<div class="single_dish col-lg-4 col-md-6 text-center">
+					<div class="thumb">
+						<img class="img-fluid" src="img/dish/d2.jpg" alt="">
+					</div>
+					<h4>Blue Matcha</h4>
+					<p>
+						Flower taste
+					</p>
+					<h5 class="price">$5.59</h5>
+				</div>
+
+				<div class="single_dish col-lg-4 col-md-6 text-center">
+					<div class="thumb">
+						<img class="img-fluid" src="img/dish/d3.jpg" alt="">
+					</div>
+					<h4>Matcha Kurkuma</h4>
+					<p>
+						Spicy taste
+					</p>
+					<h5 class="price">$5.59</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Top Products Area =================-->
+
+	<!--================ Blog Area =================-->
+	<section class="gallery_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title position-relative">
+						<h1>why matcha is cool?</h1>
+						<hr>
+						<div class="round-planet planet">
+							<div class="round-planet planet2">
+								<div class="shape shape1"></div>
+								<div class="shape shape2"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="lightgallery">
+				<div class="col-lg-7 all-image" data-src="img/gallery/g1.jpg">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="img/gallery/g1.jpg" alt="">
+						<div class="content">
+							<i class="lnr lnr-picture"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-5 all-image" data-src="img/gallery/g2.jpg">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="img/gallery/g2.jpg" alt="">
+						<div class="content">
+							<i class="lnr lnr-picture"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 all-image" data-src="img/gallery/g3.jpg">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="img/gallery/g3.jpg" alt="">
+						<div class="content">
+							<i class="lnr lnr-picture"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 all-image" data-src="img/gallery/g4.jpg">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="img/gallery/g4.jpg" alt="">
+						<div class="content">
+							<i class="lnr lnr-picture"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 all-image" data-src="img/gallery/g5.jpg">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="img/gallery/g5.jpg" alt="">
+						<div class="content">
+							<i class="lnr lnr-picture"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-5 all-image" data-src="img/gallery/g6.jpg">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="img/gallery/g6.jpg" alt="">
+						<div class="content">
+							<i class="lnr lnr-picture"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-7 all-image" data-src="img/gallery/g7.jpg">
+					<div class="single-gallery">
+						<div class="overlay"></div>
+						<img class="img-fluid w-100" src="img/gallery/g7.jpg" alt="">
+						<div class="content">
+							<i class="lnr lnr-picture"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Blog Area =================-->
+{% endblock %}

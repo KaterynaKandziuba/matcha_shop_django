@@ -13,8 +13,7 @@
 	<link rel="stylesheet" href="{% static 'css/linericon.css' %}">
 	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css">
 	<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
 	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
 	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
@@ -34,41 +33,19 @@
 		</a>
 		<ul class="list menu_right">
 			<li>
-				<a href="index.html">Home</a>
+				<a href="/">Home</a>
 			</li>
 			<li>
-				<a href="about-us.html">About</a>
+				<a href="/about">About</a>
 			</li>
 			<li>
-				<a href="menu.html">Menu</a>
+				<a href="products.html">Products</a>
 			</li>
 			<li>
-				<a href="book-table.html">Book a table</a>
+				<a href="blog.html">Blog</a>
 			</li>
 			<li>
-				<a href="#">Pages</a>
-				<ul class="list">
-					<li>
-						<a href="gallery.html">Gallery</a>
-					</li>
-					<li>
-						<a href="elements.html">Elements</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Blog</a>
-				<ul class="list">
-					<li>
-						<a href="blog.html">Blog</a>
-					</li>
-					<li>
-						<a href="single-blog.html">Blog Details</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
+				<a href="/contact">Contact</a>
 			</li>
 		</ul>
 		<ul class="list social">
@@ -80,16 +57,6 @@
 			<li>
 				<a href="#">
 					<i class="fa fa-twitter"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-dribbble"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-behance"></i>
 				</a>
 			</li>
 		</ul>
@@ -112,7 +79,6 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active">
@@ -122,34 +88,10 @@
 								<a class="nav-link" href="about-us.html">About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="menu.html">Menu</a>
+								<a class="nav-link" href="products.html">Products</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="book-table.html">Book a table</a>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-									aria-haspopup="true" aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a class="nav-link" href="gallery.html">Gallery</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="elements.html">Elements</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-									aria-haspopup="true" aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item">
-										<a class="nav-link" href="blog.html">Blog</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="single-blog.html">Blog Details</a>
-									</li>
-								</ul>
+								<a class="nav-link" href="blog.html">Blog</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="contact.html">Contact</a>
@@ -174,446 +116,22 @@
 	</div>
 	<!--================End Canvus Menu Area =================-->
 
-	<!--================ Start banner section =================-->
-	<section class="home_banner relative">
-		<div class="container-fluid pl-0">
-			<div class="row justify-content-center align-items-center full_height">
-				<div class="col-lg-6 p-0">
-					<div class="banner_left d-flex justify-content-center flex-column">
-						<h1>delicious cupcakes</h1>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-							standards especially
-							in the workplace. That’s why it’s crucial that, as women.
-						</p>
-						<a class="main_btn" href="#">check our menu</a>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="banner_right d-flex justify-content-center align-items-center">
-						<div class="round-planet planet">
-							<div class="round-planet planet2">
-								<div class="round-planet planet3">
-									<div class="shape shape1"></div>
-									<div class="shape shape2"></div>
-									<div class="shape shape3"></div>
-									<div class="shape shape4"></div>
-									<div class="shape shape5"></div>
-									<div class="shape shape6"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<img class="face-img img-fluid" src="img/banner/home-banner.png" alt="">
-	</section>
-	<!--================ End banner section =================-->
-
-	<!--================ Top Dish Area =================-->
-	<section class="top_dish_area">
+	<!--================Page Content==========================-->
+	<div>
 		{% block content %}{% endblock %}
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title position-relative">
-						<h1>Our Top Rated Dishes</h1>
-						<hr>
-						<div class="round-planet planet">
-							<div class="round-planet planet2">
-								<div class="shape shape1"></div>
-								<div class="shape shape2"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="single_dish col-lg-4 col-md-6 text-center">
-					<div class="thumb">
-						<img class="img-fluid" src="img/dish/d1.jpg" alt="">
-					</div>
-					<h4>Bread Fruit Cheese Sandwich</h4>
-					<p>
-						Bread/Potato/Cheese
-					</p>
-					<h5 class="price">$5.59</h5>
-				</div>
+	</div>
+	<!--================Page Content==========================-->
 
-				<div class="single_dish col-lg-4 col-md-6 text-center">
-					<div class="thumb">
-						<img class="img-fluid" src="img/dish/d2.jpg" alt="">
-					</div>
-					<h4>Beef Cutlet with Spring Onion</h4>
-					<p>
-						Bread/Potato/Cheese
-					</p>
-					<h5 class="price">$5.59</h5>
-				</div>
-
-				<div class="single_dish col-lg-4 col-md-6 text-center">
-					<div class="thumb">
-						<img class="img-fluid" src="img/dish/d3.jpg" alt="">
-					</div>
-					<h4>Meat with sauce & Vegetables</h4>
-					<p>
-						Bread/Potato/Cheese
-					</p>
-					<h5 class="price">$5.59</h5>
-				</div>
-			</div>
-		</div>
+	<!--================Register Area =====================-->
+	<section>
+		{% block registration-form %}{% endblock registration-form %}
 	</section>
-	<!--================ End Top Dish Area =================-->
-
-	<!--================ Menu Area =================-->
-	<section class="menu_area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title position-relative">
-						<h1>Our favourite Menu</h1>
-						<hr>
-						<div class="round-planet planet">
-							<div class="round-planet planet2">
-								<div class="shape shape1"></div>
-								<div class="shape shape2"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row menu_inner">
-				<div class="col-md-12 col-lg-10 col-xl-6">
-					<div class="menu_list">
-						<ul class="list">
-							<li>
-								<h4>Wonton with french fries
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Roasted Red Potatoes with Rosemary
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Bacon-Wrapped Shrimp with Garlic
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Apple Smoked Chicken with White Sauce
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Imported Oysters Grill (5 Pieces)
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Apple Smoked Chicken with White Sauce
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-12 col-lg-10 col-xl-6">
-					<div class="menu_list pr-0">
-						<ul class="list">
-							<li>
-								<h4>Wonton with french fries
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Roasted Red Potatoes with Rosemary
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Bacon-Wrapped Shrimp with Garlic
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Apple Smoked Chicken with White Sauce
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Imported Oysters Grill (5 Pieces)
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-							<li>
-								<h4>Apple Smoked Chicken with White Sauce
-									<span>$5.00</span>
-								</h4>
-								<p>Wonthon/Potato/Fries/Sauce</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Menu Area =================-->
-
-	<!--================ Gallery Area =================-->
-	<section class="gallery_area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title position-relative">
-						<h1>foodbar galleries</h1>
-						<hr>
-						<div class="round-planet planet">
-							<div class="round-planet planet2">
-								<div class="shape shape1"></div>
-								<div class="shape shape2"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row" id="lightgallery">
-				<div class="col-lg-7 all-image" data-src="img/gallery/g1.jpg">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery/g1.jpg" alt="">
-						<div class="content">
-							<i class="lnr lnr-picture"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-5 all-image" data-src="img/gallery/g2.jpg">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery/g2.jpg" alt="">
-						<div class="content">
-							<i class="lnr lnr-picture"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 all-image" data-src="img/gallery/g3.jpg">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery/g3.jpg" alt="">
-						<div class="content">
-							<i class="lnr lnr-picture"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 all-image" data-src="img/gallery/g4.jpg">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery/g4.jpg" alt="">
-						<div class="content">
-							<i class="lnr lnr-picture"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 all-image" data-src="img/gallery/g5.jpg">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery/g5.jpg" alt="">
-						<div class="content">
-							<i class="lnr lnr-picture"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-5 all-image" data-src="img/gallery/g6.jpg">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery/g6.jpg" alt="">
-						<div class="content">
-							<i class="lnr lnr-picture"></i>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-7 all-image" data-src="img/gallery/g7.jpg">
-					<div class="single-gallery">
-						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery/g7.jpg" alt="">
-						<div class="content">
-							<i class="lnr lnr-picture"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Gallery Area =================-->
-
-	<!--================Member Area =================-->
-	<section class="testimonials_area section_gap position-relative">
-		<div class="container">
-			<div class="testi_slider owl-carousel">
-				<div class="item">
-					<div class="row">
-						<div class="col-lg-4">
-							<img src="img/testimonials/testi-1.jpg" alt="">
-						</div>
-						<div class="col-lg-8">
-							<div class="testi_text">
-								<h4>Filipino Gomez</h4>
-								<h5>Web Developer, Google</h5>
-								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet,
-									consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-									veniam, quis nostrud exercitation
-									ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="row">
-						<div class="col-lg-4">
-							<img src="img/testimonials/testi-1.jpg" alt="">
-						</div>
-						<div class="col-lg-8">
-							<div class="testi_text">
-								<h4>Filipino Gomez</h4>
-								<h5>Web Developer, Google</h5>
-								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet,
-									consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-									veniam, quis nostrud exercitation
-									ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="row">
-						<div class="col-lg-4">
-							<img src="img/testimonials/testi-1.jpg" alt="">
-						</div>
-						<div class="col-lg-8">
-							<div class="testi_text">
-								<h4>Filipino Gomez</h4>
-								<h5>Web Developer, Google</h5>
-								<p>“Who are in extremely love with eco friendly system. Lorem ipsum dolor sit amet,
-									consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-									veniam, quis nostrud exercitation
-									ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Member Area =================-->
-
-	<!--================Book Table Area =================-->
-	<section class="reservation">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title position-relative">
-						<h1>Make Reservation</h1>
-						<hr>
-						<div class="round-planet planet">
-							<div class="round-planet planet2">
-								<div class="shape shape1"></div>
-								<div class="shape shape2"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="book_table_inner row align-items-center">
-				<div class="offset-lg-2 offset-md-1 col-lg-8 col-md-10">
-					<div class="table_form">
-						<form class="book_table_form row" action="#">
-							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="name" name="name"
-									placeholder="Enter your name">
-							</div>
-							<div class="form-group col-md-12">
-								<input type="email" class="form-control" id="email" name="email"
-									placeholder="Enter email address">
-							</div>
-							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="subject" name="subject"
-									placeholder="Phone Number">
-							</div>
-							<div class="form-group col-md-12">
-								<input type="text" class="form-control" id="subject" name="subject"
-									placeholder="Select date & time">
-							</div>
-							<div class="form-group col-md-12">
-								<div class="form-select">
-									<select>
-										<option value="1">Select event</option>
-										<option value="1">Select event Dhaka</option>
-										<option value="1">Select event Dilli</option>
-										<option value="1">Select event Newyork</option>
-										<option value="1">Select event Islamabad</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group col-md-12">
-								<button type="submit" value="submit" class="btn submit_btn form-control">Make
-									Reservation</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Book Table Area =================-->
+	<!--================End Register Area =================-->
 
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area p_120">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2  col-md-6 col-sm-6">
-					<div class="single-footer-widget tp_widgets">
-						<h6 class="footer_title">Top Products</h6>
-						<ul class="list">
-							<li>
-								<a href="#">Managed Website</a>
-							</li>
-							<li>
-								<a href="#">Manage Reputation</a>
-							</li>
-							<li>
-								<a href="#">Power Tools</a>
-							</li>
-							<li>
-								<a href="#">Marketing Service</a>
-							</li>
-						</ul>
-					</div>
-				</div>
 				<div class="col-lg-2  col-md-6 col-sm-6">
 					<div class="single-footer-widget tp_widgets">
 						<h6 class="footer_title">Quick Links</h6>
@@ -633,45 +151,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-2  col-md-6 col-sm-6">
-					<div class="single-footer-widget tp_widgets">
-						<h6 class="footer_title">Features</h6>
-						<ul class="list">
-							<li>
-								<a href="#">Jobs</a>
-							</li>
-							<li>
-								<a href="#">Brand Assets</a>
-							</li>
-							<li>
-								<a href="#">Investor Relations</a>
-							</li>
-							<li>
-								<a href="#">Terms of Service</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2  col-md-6 col-sm-6">
-					<div class="single-footer-widget tp_widgets">
-						<h6 class="footer_title">Resources</h6>
-						<ul class="list">
-							<li>
-								<a href="#">Guides</a>
-							</li>
-							<li>
-								<a href="#">Research</a>
-							</li>
-							<li>
-								<a href="#">Experts</a>
-							</li>
-							<li>
-								<a href="#">Agencies</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="col-lg-4 col-md-6 col-sm-6">{% block newsletter %}{% endblock newsletter %}
 					<aside class="f_widget news_widget">
 						<div class="f_title">
 							<h3 class="footer_title">Newsletter</h3>
@@ -711,20 +191,11 @@
 					<a href="#">
 						<i class="fa fa-twitter"></i>
 					</a>
-					<a href="#">
-						<i class="fa fa-dribbble"></i>
-					</a>
-					<a href="#">
-						<i class="fa fa-behance"></i>
-					</a>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
-
-
-
 
 
 	<!-- Optional JavaScript -->
