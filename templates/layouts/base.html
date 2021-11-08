@@ -25,8 +25,13 @@
 </head>
 
 <body>
+	<!--===============Registration/Login Area==============-->
+	<div class="user_area">
+	</div>
+	<!--=============End Registration/Login Area=============-->
 
-	<!--================Offcanvus Menu Area =================-->
+
+	<!--================Offcanvus Menu Area=================-->
 	<div class="side_menu">
 		<a class="logo" href="#">
 			<img src="img/logo.png" alt="">
@@ -82,10 +87,10 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="index.html">Home</a>
+								<a class="nav-link" href="/">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="about-us.html">About</a>
+								<a class="nav-link" href="/about">About</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="products.html">Products</a>
@@ -94,7 +99,7 @@
 								<a class="nav-link" href="blog.html">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="contact.html">Contact</a>
+								<a class="nav-link" href="/contact">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -197,7 +202,6 @@
 	</footer>
 	<!--================ End footer Area  =================-->
 
-
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
@@ -217,5 +221,11 @@
 	<script src="{% static 'js/jquery.mCustomScrollbar.js' %}"></script>
 	<script src="{% static 'js/theme.js' %}"></script>
 </body>
+
+<style>
+	.user-area {
+		background: red;
+	}
+</style>
 
 </html>
