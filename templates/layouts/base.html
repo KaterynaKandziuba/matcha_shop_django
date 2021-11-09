@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Matcha - {% block title %}{% endblock title %}</title>
+	<title>MatchaShop {% block title %}{% endblock title %}</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 	<link rel="stylesheet" href="{% static 'css/linericon.css' %}">
@@ -22,6 +22,11 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/register.js' %}"></script>
 </head>
 
 <body>
@@ -207,10 +212,6 @@
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-	<script src="{% static 'js/popper.js' %}"></script>
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/stellar.js' %}"></script>
 	<script src="{% static 'js/jquery.lightbox.js' %}"></script>
 	<!-- <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
@@ -224,12 +225,8 @@
 	<!-- <script src="{% static 'vendors/swiper/js/swiper.min.js' %}"></script> -->
 	<script src="{% static 'js/jquery.mCustomScrollbar.js' %}"></script>
 	<script src="{% static 'js/theme.js' %}"></script>
-</body>
+	<script src="{% static 'js/register.js' %}"></script>
 
-<style>
-	.user-area {
-		background: red;
-	}
-</style>
+</body>
 
 </html>

@@ -24,13 +24,7 @@ def register(request):
         mess = 'You are successfully registered!'
         color = 'green'
 
-        return render(request, 'account/report.html', context={
-            'page_name': 'Registration result',
-            'page_app': 'account',
-            'page_view': 'report',
-            'mess': mess,
-            'color': color
-        })
+        return render(request, 'home/index.html')
 
 
 def entry(request):
@@ -74,7 +68,7 @@ def ajax_reg(request):
     login = request.GET.get('login')
     try:
         User.objects.get(username=login)
-        response['message'] = 'Username is busy'
+        response['message'] = 'Busy'
     except User.DoesNotExist:
         response['message'] = 'Ок'
     return JsonResponse(response)
