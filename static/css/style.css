@@ -684,7 +684,7 @@ button:focus {
 }
 
 .account-btn a {
-  color:#222222;
+  color: #222222;
 }
 
 .registration-btn {
@@ -2508,6 +2508,11 @@ button:focus {
 
 .book_table_form .form-group:last-child {
   text-align: center;
+}
+
+.reg-err {
+  font-size: .8em;
+  color: rgb(233, 86, 86);
 }
 
 /* End Book Table Area css
