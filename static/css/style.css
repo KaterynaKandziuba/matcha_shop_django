@@ -19,7 +19,7 @@ Author E-mail: rockybd1995@gmail.com
 
 Table of Content:
 01/ Variables
-02/ predefin
+02/ predefine
 03/ header
 04/ button
 05/ banner
@@ -669,6 +669,33 @@ button:focus {
 
 /* Home Banner Area css
 ============================================================================================ */
+
+.account-btn {
+  text-align: center;
+  border: none;
+  background-color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 50px rgba(234, 234, 234, 0.52);
+}
+
+.account-btn a {
+  color: #222222;
+}
+
+.registration-btn {
+  position: absolute;
+  left: 100px;
+}
+
+.login-btn {
+  position: absolute;
+  left: 230px;
+}
 
 .open .side_menu {
   right: 0px;
@@ -2481,6 +2508,11 @@ button:focus {
 
 .book_table_form .form-group:last-child {
   text-align: center;
+}
+
+.reg-err {
+  font-size: .8em;
+  color: rgb(233, 86, 86);
 }
 
 /* End Book Table Area css

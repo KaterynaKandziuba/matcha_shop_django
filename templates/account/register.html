@@ -24,35 +24,31 @@
 		<div class="book_table_inner row align-items-center">
 			<div class="offset-lg-2 offset-md-1 col-lg-8 col-md-10">
 				<div class="table_form">
-					<form class="book_table_form row" action="#">
+					<form class="book_table_form row" id="form-register" action="/account/register" method="post"
+						onsubmit="return false">
+						{% csrf_token %}
 						<div class="form-group col-md-12">
-							<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+							<input type="text" class="form-control" id="login" name="login"
+								placeholder="Enter your name">
+							<span class="reg-err" id="login-err"></span>
 						</div>
 						<div class="form-group col-md-12">
 							<input type="email" class="form-control" id="email" name="email"
 								placeholder="Enter email address">
+							<span class="reg-err" id="email-err"></span>
 						</div>
 						<div class="form-group col-md-12">
-							<input type="text" class="form-control" id="subject" name="subject"
-								placeholder="Phone Number">
+							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
+							<span class="reg-err" id="pwd-err"></span>
 						</div>
 						<div class="form-group col-md-12">
-							<input type="text" class="form-control" id="subject" name="subject"
-								placeholder="Select date & time">
+							<input type="password" class="form-control" id="pwd-repeat"
+								placeholder="Repeat your password">
+							<span class="reg-err" id="pwd-repeat-err"></span>
 						</div>
-						<div class="form-group col-md-12">
-							<div class="form-select">
-								<select>
-									<option value="1">Select event</option>
-									<option value="1">Select event Dhaka</option>
-									<option value="1">Select event Dilli</option>
-									<option value="1">Select event Newyork</option>
-									<option value="1">Select event Islamabad</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-group col-md-12">
-							<button type="submit" value="submit" class="btn submit_btn form-control">Send</button>
+						<div class="form-group col-md-12" style="top: 20px">
+							<button type="submit" value="submit" id="submit-btn"
+								class="btn submit_btn form-control">Send</button>
 						</div>
 					</form>
 				</div>
@@ -60,4 +56,5 @@
 		</div>
 	</div>
 </section>
+<script src="{% static 'js/register.js' %}"></script>
 {% endblock %}

@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Matcha - {% block title %}{% endblock title %}</title>
+	<title>MatchaShop {% block title %}{% endblock title %}</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 	<link rel="stylesheet" href="{% static 'css/linericon.css' %}">
@@ -22,15 +22,13 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/popper.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 
 <body>
-	<!--===============Registration/Login Area==============-->
-	<div class="user_area">
-	</div>
-	<!--=============End Registration/Login Area=============-->
-
-
 	<!--================Offcanvus Menu Area=================-->
 	<div class="side_menu">
 		<a class="logo" href="#">
@@ -109,8 +107,18 @@
 	</header>
 	<!--================Header Menu Area =================-->
 
-	<!--================Canvus Menu Area =================-->
+	<!-- ================Canvus Menu Area =================-->
 	<div class="canvus_menu">
+		<!--===============Registration/Login==============-->
+		<div class="user_area">
+			<button class="account-btn registration-btn">
+				<a href="/account/register">Register</a>
+			</button>
+			<button class="account-btn login-btn">
+				<a href="/">Login</a>
+			</button>
+		</div>
+		<!--=============End Registration/Login=============-->
 		<div class="container">
 			<div class="float-right">
 				<div class="toggle_icon">
@@ -119,7 +127,7 @@
 			</div>
 		</div>
 	</div>
-	<!--================End Canvus Menu Area =================-->
+	<!--================End Canvus Menu Area ================= -->
 
 	<!--================Page Content==========================-->
 	<div>
@@ -203,10 +211,6 @@
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-	<script src="{% static 'js/popper.js' %}"></script>
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/stellar.js' %}"></script>
 	<script src="{% static 'js/jquery.lightbox.js' %}"></script>
 	<!-- <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
@@ -221,11 +225,5 @@
 	<script src="{% static 'js/jquery.mCustomScrollbar.js' %}"></script>
 	<script src="{% static 'js/theme.js' %}"></script>
 </body>
-
-<style>
-	.user-area {
-		background: red;
-	}
-</style>
 
 </html>
