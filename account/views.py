@@ -26,6 +26,8 @@ def register(request):
 
         return render(request, 'home/index.html')
 
+def login(request):
+    return render(request, 'account/login.html')
 
 def entry(request):
     if request.method == 'GET':

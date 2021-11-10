@@ -1,7 +1,11 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'home/index.html')
+    return render(request, 'home/index.html', context={
+        'page_name': 'Страница логина',
+        'page_app': 'home',
+        'page_view': 'index'
+    })
 
 
 def about(request):
