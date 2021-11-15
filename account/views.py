@@ -23,7 +23,6 @@ def register(request):
         user.save()
         mess = 'You are successfully registered!'
         color = 'green'
-
         return render(request, 'home/index.html', context={
             'page_name': 'Register',
             'page_app': 'account',
