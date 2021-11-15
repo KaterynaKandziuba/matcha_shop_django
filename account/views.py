@@ -24,14 +24,52 @@ def register(request):
         mess = 'You are successfully registered!'
         color = 'green'
 
-        return render(request, 'home/index.html')
-
-def login(request):
-    return render(request, 'account/login.html')
+        return render(request, 'account/report.html', context={
+            'page_name': 'Registration report',
+            'page_app': 'account',
+            'page_view': 'report',
+            'mess': mess,
+            'color': color
+        })
 
 def entry(request):
     if request.method == 'GET':
-        return render(request, 'account/login.html', context={
+        return render(request, 'account/entry.html', context={
+            'page_name': 'Авторизация',
+            'page_app': 'account',
+            'page_view': 'entry'
+        })
+    elif request.method == 'POST':
+        login_x = request.POST.get('login')
+        pass1_x = request.POST.get('pwd')
+
+        # 2 - Проверка подлинности пары логин/пароль (Базе Данных)
+        user = authenticate(request, username=login_x, password=pass1_x)
+        if user is None:
+            mess = 'Пользователь не найден!'
+            color = 'red'
+            return render(request, 'account/report.html', context={
+                'page_name': 'Отчёт об авторизации',
+                'page_app': 'account',
+                'page_view': 'report',
+                'mess': mess,
+                'color': color
+            })
+        else:
+            login(request, user)
+            return redirect('/')
+
+def sign_out(request):
+    logout(request)
+    return render(request, 'account/logout.html', context={
+        'page_name': 'logout',
+        'page_app': 'account',
+        'page_view': 'logout'
+    })
+
+def entry(request):
+    if request.method == 'GET':
+        return render(request, 'account/entry.html', context={
             'page_name': 'Login',
             'page_app': 'account',
             'page_view': 'login'
