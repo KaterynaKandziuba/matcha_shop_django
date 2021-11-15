@@ -24,7 +24,7 @@
 		<div class="book_table_inner row align-items-center">
 			<div class="offset-lg-2 offset-md-1 col-lg-8 col-md-10">
 				<div class="table_form">
-					<form class="book_table_form row" id="form-register" action="/account/login" method="post"
+					<form class="book_table_form row" id="form-register" action="/account/entry" method="post"
 						onsubmit="return true">
 						{% csrf_token %}
 						<div class="form-group col-md-12">
@@ -48,5 +48,4 @@
 		</div>
 	</div>
 </section>
-<script src="{% static 'js/register.js' %}"></script>
 {% endblock %}
