@@ -1,14 +1,18 @@
 {% extends 'layouts/base.html' %}
 
+{% block title %}Report{% endblock title %}
 
-{% block title %}Отчёт о регистрации{% endblock title %}
-
-
-{% block content %}
+{% block registration-form %}
 {% load static %}
-<br><br><br>
-    <h4 style="color: {{ color }}">
-        {{ mess }}
-    </h4>
-<br><br>
-{% endblock content %}
+<section class="reservation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main_title position-relative">
+					<h1 style="color: {{ color }}">{{ mess }}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
