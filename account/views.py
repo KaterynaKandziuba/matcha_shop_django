@@ -24,10 +24,13 @@ def register(request):
         mess = 'You are successfully registered!'
         color = 'green'
 
-        return render(request, 'home/index.html')
-
-def login(request):
-    return render(request, 'account/login.html')
+        return render(request, 'home/index.html', context={
+            'page_name': 'Register',
+            'page_app': 'account',
+            'page_view': 'registration',
+            'mess': mess,
+            'color': color
+        })
 
 def entry(request):
     if request.method == 'GET':
@@ -45,7 +48,7 @@ def entry(request):
         mess = 'Wrong user name or password ...'
         color = 'orange'
         return render(request, 'account/report.html', context={
-            'page_name': 'Login result',
+            'page_name': 'Login',
             'page_app': 'account',
             'page_view': 'report',
             'mess': mess,
@@ -58,7 +61,7 @@ def entry(request):
 
 def sign_out(request):
     logout(request)
-    return render(request, 'account/logout.html', context={
+    return render(request, 'home/index.html', context={
             'page_name': 'Logout',
             'page_app': 'account',
             'page_view': 'sign_out'

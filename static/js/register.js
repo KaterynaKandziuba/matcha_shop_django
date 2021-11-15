@@ -64,14 +64,10 @@ $(document).ready(function () {
     })
 
     $('#submit-btn').click(function () {
-        alert('Clicked!')
-
         if (pwdCheck && pwdCheck && pwdRepeatCheck && emailCheck) {
-            alert('OK')
             $('#form-register').attr('onsubmit', 'return true');
         } else {
             $('#form-register').attr('onsubmit', 'return false');
-            alert('NOT OK')
             alert('Form contains wrong data')
         }
     });
